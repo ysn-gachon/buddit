@@ -13,7 +13,7 @@ export default function Insights() {
             명동 거리에서 실제 외국인 관광객들과 진행한 인터뷰 결과
           </p>
           <Badge variant="secondary" className="text-sm px-3 py-1">
-            2024.9.15 • 7팀 • 미국·체코·일본·러시아 관광객
+            2025.9.15 • 7팀 • 미국·체코·일본·러시아 관광객
           </Badge>
         </div>
 
