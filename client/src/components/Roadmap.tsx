@@ -7,36 +7,31 @@ export default function Roadmap() {
       phase: "Phase 1",
       title: "2차 고객 인터뷰",
       description: "게스트하우스 & 호스텔 외국인 대상 심층 조사",
-      status: "completed",
-      timeline: "2024년 9월"
+      status: "upcoming"
     },
     {
       phase: "Phase 2", 
       title: "로컬 가이드 프리토타입",
       description: "대학생·직장인 기반 MVP 매칭 테스트",
-      status: "in-progress",
-      timeline: "2024년 10월"
+      status: "upcoming"
     },
     {
       phase: "Phase 3",
       title: "린 캔버스 작성",
       description: "로컬 가이드 편 비즈니스 모델 검증",
-      status: "upcoming",
-      timeline: "2024년 11월"
+      status: "upcoming"
     },
     {
       phase: "Phase 4",
       title: "고객 생애주기 로드맵",
       description: "인지 → 가입 → 첫 이용 → 반복 사용 → 추천/리뷰",
-      status: "upcoming",
-      timeline: "2024년 12월"
+      status: "upcoming"
     },
     {
       phase: "Phase 5",
       title: "기업 랜딩페이지 런칭",
       description: "스토리 + 인터뷰 영상 + 프리토타입 UI",
-      status: "upcoming",
-      timeline: "2025년 1월"
+      status: "upcoming"
     }
   ];
 
@@ -69,16 +64,11 @@ export default function Roadmap() {
                 <CardContent className="p-6">
                   <div className="flex items-start">
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center space-x-3">
-                          <Badge variant="outline" className="text-xs">
-                            {item.phase}
-                          </Badge>
-                          {getStatusBadge(item.status)}
-                        </div>
-                        <span className="text-sm text-muted-foreground">
-                          {item.timeline}
-                        </span>
+                      <div className="flex items-center space-x-3 mb-2">
+                        <Badge variant="outline" className="text-xs">
+                          {item.phase}
+                        </Badge>
+                        {getStatusBadge(item.status)}
                       </div>
                       <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">
