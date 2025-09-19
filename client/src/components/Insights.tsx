@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Users, MessageSquare, DollarSign, Heart } from 'lucide-react';
-import insightsImage from '@assets/generated_images/Myeongdong_street_tour_scene_53500a68.png';
+import insightsImage from '@assets/generated_images/Myeongdong_tourist_street_interview_df2f1125.png';
 
 export default function Insights() {
   return (
