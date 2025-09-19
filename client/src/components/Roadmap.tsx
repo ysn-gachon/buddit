@@ -1,6 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Circle, Clock } from 'lucide-react';
 
 export default function Roadmap() {
   const roadmapItems = [
@@ -41,16 +40,6 @@ export default function Roadmap() {
     }
   ];
 
-  const getStatusIcon = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return <CheckCircle className="h-5 w-5 text-green-500" />;
-      case 'in-progress':
-        return <Clock className="h-5 w-5 text-accent-foreground" />;
-      default:
-        return <Circle className="h-5 w-5 text-muted-foreground" />;
-    }
-  };
 
   const getStatusBadge = (status: string) => {
     switch (status) {
@@ -78,10 +67,7 @@ export default function Roadmap() {
             {roadmapItems.map((item, index) => (
               <Card key={index} className="hover-elevate">
                 <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 mt-1">
-                      {getStatusIcon(item.status)}
-                    </div>
+                  <div className="flex items-start">
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center space-x-3">
