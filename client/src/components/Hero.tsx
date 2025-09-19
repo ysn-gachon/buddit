@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/generated_images/Korean_local_tourist_interaction_86f700b9.png';
+import heroImage from '@assets/generated_images/Seoul_Hanok_Village_cultural_exchange_4ba9e0a1.png';
 
 export default function Hero() {
   return (
